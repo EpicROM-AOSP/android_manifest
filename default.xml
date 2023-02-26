@@ -1200,5 +1200,7 @@
   <include name="snippets/pixel.xml" />
   <include name="snippets/pixel-extras.xml" />
   <include name="snippets/pixel-caf.xml" />
-
+  
+  <!-- Add all EpicROM-AOSP repos -->
+  <include name="snippets/epic.xml" />
 </manifest>

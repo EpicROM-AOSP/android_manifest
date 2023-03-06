@@ -30,4 +30,6 @@
 
   <!-- Vendor -->
   <project path="vendor/epic" name="android_vendor_epic" remote="epic" />
+  <project path="vendor/pixel-framework" name="android_vendor_pixel-framework" remote="epic" />
+  <project path="vendor/custom-preference" name="android_vendor_support" remote="epic" /> 
 </manifest>

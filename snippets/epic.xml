@@ -51,6 +51,7 @@
   <project path="packages/apps/Settings" name="android_packages_apps_Settings" groups="pdk-fs" remote="epic" />
   <project path="packages/modules/Connectivity" name="android_packages_modules_Connectivity" remote="epic" />
   <project path="packages/providers/DownloadProvider" name="android_packages_providers_DownloadProvider" groups="pdk-cw-fs,pdk-fs" remote="epic" />
+  <project path="packages/providers/MediaProvider" name="android_packages_providers_MediaProvider" groups="pdk-cw-fs,pdk-fs" remote="epic" />
   <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" remote="epic" />
   
   <!-- System repos -->

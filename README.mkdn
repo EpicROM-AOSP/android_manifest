@@ -31,6 +31,69 @@ Afterwards, sync the source by running this command:
 repo sync --force-sync --optimized-fetch --no-tags --no-clone-bundle --prune -j$(nproc --all)
 ```
 
+Build Flags
+---------------
+```bash
+# chipset flag enclose var with "" if more than one
+# friendly tip: builders can use init_xxx.cpp as workaround for spacing
+# e.g. property_override("ro.epic.chipset", "Snapdragon 870 5G");
+EPIC_CHIPSET := "snapdragon x"
+
+# chipset flag enclose var with "" if more than one
+# friendly tip: builders can use init_xxx.cpp as workaround for spacing
+# e.g. property_override("ro.epic.maintainer", "maintainer");
+EPIC_MAINTAINER := "a maintainer"
+
+# chipset flag enclose var with "" if more than one
+# this will reflect on build/display version, a firmware package/zip name 
+# e.g. EpicROM-V1.0-Beta-COMMUNITY-device-AOSP.zip - AOSP is the default package type, WITH_GMS will override the package type to PIXEL
+EPIC_PACKAGE_TYPE := "VANILLA AOSP"
+
+# Aperture Camera (default: not defined - skipped by the compiler)
+TARGET_BUILD_APERTURE_CAMERA := true/false
+
+# disable/enable blur support, default is false
+TARGET_ENABLE_BLUR := true/false
+
+# UDFPS ICONS/ANIMATIONS
+TARGET_HAS_UDFPS := true/false
+
+# Spoof build description/fingerprint as pixel device
+TARGET_USE_PIXEL_FINGERPRINT := true/false
+
+# for example add device tree lineage_????.mk
+EPIC_OFFICIAL := true
+WITH_GAPPS := true
+TARGET_CORE_GAPPS := true
+EPIC_PACKAGE_TYPE := Gapps
+EPIC_MAINTAINER := Escobar1945
+EPIC_CHIPSET := sdm8150
+TARGET_BOOT_ANIMATION_RES := 1080
+```
+
+GMS Flags
+---------------
+```bash
+# GMS build flags
+WITH_GMS := true/false - ship with GMS packages, replaces misc AOSP packages with Google packages.
+
+# Customized GMS Flags 
+# WITH_GMS flag is required
+
+# Default GMS flags sets (Override the values on lineage_xxx.mk)
+WITH_GMS := true
+TARGET_CORE_GMS := true
+
+# Wether to use google (true) or AOSP (false) telephony package bundle. (defaults: false for gms core, true for pixel builds)
+TARGET_USE_GOOGLE_TELEPHONY := true/false
+
+# Compiler will only build GMS playstore services, its dependencies, and Gboard app.
+# package type will change from PIXEL/GMS -> CORE
+TARGET_CORE_GMS := true/false
+
+# extra flag under TARGET_CORE_GMS
+TARGET_CORE_GMS_EXTRAS := true/false - extra packages for core build type (velvet and photos)
+```
 
 Building Epic
 ---------------
@@ -42,3 +105,11 @@ In order to build, use this command:
    lunch lineage_<devicecodename>-userdebug
    mka bacon -j$(nproc --all)
 ```
+
+Credits:
+=======
+ * [**AOSP**](https://android.googlesource.com)
+ * [**LineageOS**](https://github.com/LineageOS)
+ * [**Project-Xtended**](https://github.com/Project-Xtended)
+ * [**RisingTechOSS**](https://github.com/RisingTechOSS)
+

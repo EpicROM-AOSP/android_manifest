@@ -69,6 +69,7 @@
   <remove-project name="device/google/tangorpro-sepolicy" />
   
   <!-- general repos -->
+  <remove-project name="platform/art" />
   <remove-project name="platform/bionic" />
   <remove-project name="platform/bootable/recovery" />
   <remove-project name="platform/build" />

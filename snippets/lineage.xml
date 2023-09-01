@@ -11,6 +11,7 @@
   <project path="external/avb" name="android_external_avb" groups="pdk" remote="lineage" />
   <project path="external/bash" name="android_external_bash" remote="lineage" />
   <project path="external/cldr" name="android_external_cldr" groups="pdk" remote="lineage" />
+  <project path="external/dtc" name="android_external_dtc" groups="pdk" remote="lineage" />
   <project path="external/exfatprogs" name="android_external_exfatprogs" remote="lineage" />
   <project path="external/e2fsprogs" name="android_external_e2fsprogs" groups="pdk" remote="lineage" />
   <project path="external/gptfdisk" name="android_external_gptfdisk" groups="pdk" remote="lineage" />

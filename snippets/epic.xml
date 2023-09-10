@@ -36,7 +36,10 @@
   <project path="manifest" name="android_manifest" remote="epic" />
   <project path="art" name="android_art" groups="pdk" remote="epic" />
   <project path="bionic" name="android_bionic" groups="pdk" remote="epic" />
-  <project path="bootable/recovery" name="android_bootable_recovery" groups="pdk" remote="epic" /> 
+  <project path="bootable/recovery" name="android_bootable_recovery" groups="pdk" remote="epic" />
+
+  <!-- Device -->
+  <project path="device/lineage/sepolicy" name="android_device_lineage_sepolicy" remote="epic" />  
   
   <!-- external repos -->
   <project path="external/colorkt" name="android_external_colorkt" remote="epic" />

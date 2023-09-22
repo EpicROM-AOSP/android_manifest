@@ -32,6 +32,7 @@
   <project path="external/wpa_supplicant_8" name="android_external_wpa_supplicant_8" groups="pdk" remote="lineage" />
   <project path="external/zstd" name="android_external_zstd" remote="lineage" />
   <project path="frameworks/opt/calendar" name="android_frameworks_opt_calendar" groups="pdk-cw-fs,pdk-fs" remote="lineage" />
+  <project path="frameworks/opt/colorpicker" name="android_frameworks_opt_colorpicker" groups="pdk-cw-fs,pdk-fs" remote="lineage" />
   <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" groups="pdk" remote="lineage" />
   <project path="frameworks/opt/timezonepicker" name="android_frameworks_opt_timezonepicker" groups="pdk-cw-fs,pdk-fs" remote="lineage" />
   <project path="hardware/google/gchips" name="android_hardware_google_gchips" groups="pdk-lassen,pdk-gs-arm" remote="lineage" />

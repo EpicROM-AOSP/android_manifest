@@ -65,6 +65,7 @@
   
   <!-- System repos -->
   <project path="system/core" name="android_system_core" groups="pdk" remote="epic" />
+  <project path="system/update_engine" name="android_system_update_engine" groups="pdk" remote="epic" />
   
   <!-- Vendor repos -->
   <project path="vendor/lineage" name="android_vendor_epic" remote="epic" />

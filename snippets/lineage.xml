@@ -120,7 +120,6 @@
   <project path="system/timezone" name="android_system_timezone" groups="pdk" remote="lineage" />
   <project path="system/tools/dtbtool" name="android_system_tools_dtbtool" remote="lineage" revision="lineage-18.1" />
   <project path="system/tools/mkbootimg" name="android_system_tools_mkbootimg" remote="lineage" />
-  <project path="system/update_engine" name="android_system_update_engine" groups="pdk" remote="lineage" />
   <project path="system/vold" name="android_system_vold" groups="pdk" remote="lineage" />
 
   <!-- Prebuilts Inline kernel build -->

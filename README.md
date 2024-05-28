@@ -1,4 +1,4 @@
-# PixelOS
+Project EpicROM-AOSP
 
  Getting Started
 ---------------
@@ -8,7 +8,7 @@ familiar with [Git and Repo](https://source.android.com/setup/build/downloading)
  To initialize your local repository, use command:
 
 ```bash
-repo init -u https://github.com/PixelOS-AOSP/manifest.git -b fourteen --git-lfs
+repo init -u https://github.com/EpicROM-AOSP/android_manifest -b 14 --git-lfs
 ```
 
 Then sync up:
